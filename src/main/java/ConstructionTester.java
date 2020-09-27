@@ -12,16 +12,16 @@ public class ConstructionTester
 
         System.out.println("Enter the sales tax rate: ");
         taxRate = in.nextDouble();
-        System.out.println("How many boards do you need ");
+        System.out.println("How many boards do you need? ");
          boards = in.nextInt();
         System.out.println("How many windows do you need? ");
         windows = in.nextInt();
 
-        Construction construct = new Cosntruction(lumberCost, windowCost, taxRate);
+        Construction construct = new Construction(lumberCost, windowCost, taxRate);
 
         total = construct.lumberCost(boards) + construct.windowCost(windows);
-        System.out.println(Total: + total);
-        System.out.printLn("Grand Total: " + construct.grandTotal(total));
+        System.out.println("Total: " + total);
+        System.out.print("Grand Total: " + construct.grandTotal(total));
 
     }
 }
